@@ -1,6 +1,6 @@
 # Naive 10 Characters splitter exercise:
 
-# Cut every lign at 10 character maximum
+# Slice every lign at 10 character maximum
 # The delimiter is the Linux one: \n
 # Every unsupported input return an empty string
 # String naive80CharSplitter(String input);
