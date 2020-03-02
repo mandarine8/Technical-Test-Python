@@ -1,19 +1,47 @@
-<html>
-  <head>
-    {% if title %}
-    <title>{{ title }} - Technical Test</title>
-    {% else %}
-    <title>Welcome</title>
-    {% endif %}
-  </head>
-  <body>
-    <div>
-      Technical Test:
-      <a href="/">Home</a>
-      <a href="/exercise1">Exercise 1</a>
-      <a href="/exercise2">Exercise 2</a>
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+  {% if title %}{{ title }} Technical Test {% else %}Welcome {% endif %}
+{% endblock %}
+
+{% block navbar %}
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('index') }}">Technical Test</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('exercise_1') }}">Exercise 1</a></li>
+          <li><a href="{{ url_for('exercise_2') }}">Exercise 2</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <hr>
-    {% block content %}{% endblock %}
-  </body>
-</html>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    {% block app_content %}{% endblock %}
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">March 2020 • Amandine Car</p>
+    </div>
+  </footer>
+
+
+{% endblock %}
+
