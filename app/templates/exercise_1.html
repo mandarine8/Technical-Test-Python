@@ -1,6 +1,9 @@
+<!-- Call the Base -->
 {% extends "base.html" %}
+<!-- Import the Bootstrap Form extension -->
 {% import 'bootstrap/wtf.html' as wtf %}
 
+<!-- Content of the Exercise 1 and its response -->
 {% block app_content %}
   <div class="page-header">
     <h1>Exercise 1: <small>Phrase reverse</small></h1>
@@ -13,7 +16,5 @@
     {% if response %}
       <pre class="pre-scrollable">{{response}}</pre>
     {% endif %}
-
   </div>
-
 {% endblock %}

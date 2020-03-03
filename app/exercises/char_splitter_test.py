@@ -1,3 +1,5 @@
+# Units TESTS for the exercise 2
+
 from char_splitter import char_splitter
 
 def test_one_word():
