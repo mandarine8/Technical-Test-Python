@@ -2,8 +2,10 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-  <h2>Exercise 2: Character splitter</h2>
-  <p>Slice every lign at 10 character maximum</p>
+  <div class="page-header">
+    <h1>Exercise 2: <small>Character splitter</small></h1>
+    <p>Slice every lign at 10 character maximum</p>
+  </div>
 
   <div class="col-md-4">
     {{ wtf.quick_form(form) }}

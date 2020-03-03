@@ -2,8 +2,10 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-  <h2>Exercise 1: Phrase Reverse</h2>
-  <p>Reverse words of an inputed sentence</p>
+  <div class="page-header">
+    <h1>Exercise 1: <small>Phrase reverse</small></h1>
+    <p>Reverse words of an inputed sentence</p>
+  </div>
 
   <div class="col-md-4">
     {{ wtf.quick_form(form) }}

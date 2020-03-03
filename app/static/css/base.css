@@ -7,12 +7,20 @@ body {
   margin-bottom: 60px;
 }
 
+.jumbotron{
+  background-color: #b1bed5;
+}
+
+.navbar{
+  background-color: #dfdfdf;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #fafafa;
+  background-color: #f4f3f3;
 }
 
 .footer .container {
@@ -22,4 +30,20 @@ body {
 .footer .text-muted {
   margin: 20px 0;
   text-align: right;
+}
+
+a{
+  color: #b1bed5;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li.h4{
+  color: #b1bed5;
+}
+
+.page-header h1{
+  color: #b1bed5;
 }

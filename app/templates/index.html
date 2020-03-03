@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-  <h1>Welcome on my technical test application</h1>
-  <p>Please try my exercises</p>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome on my technical test</h1>
+      <p>Please try my exercises</p>
+      <p><a class="btn btn-primary" href="{{ url_for('contact') }}" role="button">Contact me</a></p>
+    </div>
+  </div>
 {% endblock %}
