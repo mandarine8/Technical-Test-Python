@@ -24,3 +24,6 @@ def exercise_2():
     response = char_splitter(form.phrase.data)
   return render_template('exercise_2.html', title='Char splitter', form=form, response=response)
 
+@app.route('/contact')
+def contact():
+  return render_template('contact.html', title='Contact')
