@@ -35,27 +35,40 @@ How to proceed :
 * virtualenv
 * A github account
 
-### Installation - How to
+### Installation
+
+#### How to start
 ```sh
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### How to execute the code
+#### How to execute the code
 ```sh
 flask run
 ```
 
-
 ### Tests - How to run it
-
-### Algorithms
+```sh
+pytest
+```
 
 ### Difficulties
 
+There is still an issue remaining with the exercise 2, Char splitter.
+Despite my successfull tests, when a text with the first line containing 10 characters
+is submitted, a useless line is added in the response.
+I tried to fix it by removing the "second" delimiter, but the problem persists and I don't understand why.
+
+Learning Python and Flask in few days was challenging, and it's why it is not complete.
+I wish I had time to finish at least a third exercise, and more features like a database
+to store the responses.
+
 ### Acknowledgments
 
+I am proud of what I have done, even if it's not complete.
+I love learning, and this Python and Flask introduction was great.
 
 
 

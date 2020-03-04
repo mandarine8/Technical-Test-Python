@@ -5,7 +5,7 @@
 # Every unsupported input return an empty string
 # String naive80CharSplitter(String input);
 
-# Defining the main fonction with an input as parameter
+# Defining the main fonction with a string input as parameter
 def char_splitter(input_value):
   # Condition part 1: the input is a string
   if isinstance(input_value, str):
@@ -17,7 +17,7 @@ def char_splitter(input_value):
     for line in lines:
       # Add the lines splitted in this variable splitted_lines
       splitted_lines += splitter(line)
-    # Return the new variable
+    # Return the output string
     return splitted_lines
   # Condition part 2: the input is not a string
   else:
@@ -34,9 +34,9 @@ def splitter(line):
     splitted_text += line[:10]
     # Condition: if the line contain 10 characters or more,
     if len(line) >= 10:
-      # Insert a delimiter as a string
+      # Insert a line delimiter
       splitted_text += "\n"
     # Replace the line with the remaining characters
     line = line[10:]
-  # Return the new variable with the splitted text
+  # Return the splitted line
   return splitted_text

@@ -5,7 +5,7 @@
 # Return an empty string if the input is not correct
 # String phraseReverse(String input);
 
-# Defining the fonction with an input as parameter
+# Defining the fonction with a string input as parameter
 def phrase_reverse(input_value):
   # Condition part 1: the input is a string
   if isinstance(input_value, str):
@@ -15,7 +15,7 @@ def phrase_reverse(input_value):
     words.reverse()
     # Join all the words with a space and store this value in a new variable new_phrase
     new_phrase = " ".join(words)
-    # Return the new variable with the words joined with spaces
+    # Return the joined words
     return new_phrase
   # Condition part 2: the input is not a string
   else:
