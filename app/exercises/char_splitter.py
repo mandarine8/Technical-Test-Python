@@ -32,11 +32,11 @@ def splitter(line):
   while len(line) != 0:
     # Add the first 10 characters of the line to the variable splitted_text
     splitted_text += line[:10]
-    # Condition: if the line contain 10 characters or more,
-    if len(line) >= 10:
-      # Insert a line delimiter
-      splitted_text += "\n"
     # Replace the line with the remaining characters
     line = line[10:]
+    # Condition: if the line contain 10 characters or more,
+    if line and not (splitted_text.endswith("\n") or line.startswith("\n")):
+      # Insert a line delimiter
+      splitted_text += "\n"
   # Return the splitted line
   return splitted_text
