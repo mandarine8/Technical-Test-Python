@@ -1,20 +1,25 @@
+<!-- Call the Bootstrap extension -->
 {% extends 'bootstrap/base.html' %}
 
+<!-- Insert the title -->
 {% block title %}
   {% if title %}{{ title }} - Technical Test {% else %}Welcome {% endif %}
 {% endblock %}
 
+<!-- Link the css file -->
 {% block styles %}
   {{ super()}}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
 {% endblock %}
 
+<!-- Set the metadata -->
 {% block metas %}
   {{ super()}}
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <meta name="description" content="Technical Test in Python and Flask">
 {% endblock %}
 
+<!-- Create the apparence and the comportement of the navbar -->
 {% block navbar %}
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -42,15 +47,16 @@
   </nav>
 {% endblock %}
 
+<!-- Render the content of the application -->
 {% block content %}
   <div class="container">
     {% block app_content %}{% endblock %}
   </div>
 
+  <!-- Insert the footer -->
   <footer class="footer">
     <div class="container">
       <p class="text-muted">March 2020 • Amandine Car</p>
     </div>
   </footer>
-
 {% endblock %}

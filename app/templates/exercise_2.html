@@ -1,6 +1,9 @@
+<!-- Call the Base -->
 {% extends "base.html" %}
+<!-- Import the Bootstrap Form extension -->
 {% import 'bootstrap/wtf.html' as wtf %}
 
+<!-- Content of the Exercise 2 and its response -->
 {% block app_content %}
   <div class="page-header">
     <h1>Exercise 2: <small>Character splitter</small></h1>
@@ -8,13 +11,12 @@
   </div>
 
   <div class="col-md-4">
+    <!-- Takes care of rendering the form -->
     {{ wtf.quick_form(form) }}
 
     {% if response %}
       <textarea class="form-control response" readonly>{{response}}</textarea>
     {% endif %}
-
   </div>
-
 {% endblock %}
 
