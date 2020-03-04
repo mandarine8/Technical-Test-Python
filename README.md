@@ -60,6 +60,8 @@ There is still an issue remaining with the exercise 2, Char splitter.
 Despite my successfull tests, when a text with the first line containing 10 characters
 is submitted, a useless line is added in the response.
 I tried to fix it by removing the "second" delimiter, but the problem persists and I don't understand why.
+Maybe it's because of the addition of "\r" on Mac Os, but I don't know how to proceed in this case.
+[Stackoverflow](https://stackoverflow.com/a/22233816)
 
 Learning Python and Flask in few days was challenging, and it's why it is not complete.
 I wish I had time to finish at least a third exercise, and more features like a database

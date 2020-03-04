@@ -34,7 +34,9 @@ def splitter(line):
     splitted_text += line[:10]
     # Replace the line with the remaining characters
     line = line[10:]
-    # Condition: if the line contain 10 characters or more,
+    # Condition: if the line still contains characters,
+    # and if the previous line does not end with a delimiter
+    # or the the next line does not start with a delimiter
     if line and not (splitted_text.endswith("\n") or line.startswith("\n")):
       # Insert a line delimiter
       splitted_text += "\n"
