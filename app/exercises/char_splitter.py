@@ -22,8 +22,8 @@ def splitter(line):
 
   while len(line) != 0:
     splitted_text += line[:10]
-    if len(line) >= 10:
-      splitted_text += "\n"
     line = line[10:]
+    if line and not (splitted_text.endswith("\n") or line.startswith("\n")):
+      splitted_text += "\n"
 
   return splitted_text
